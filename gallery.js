@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     id:           237,
     title:        'Puppy',
@@ -140,4 +140,4 @@
       url:  'https://unsplash.com/photos/h13Y8vyIXNU'
     }
   }
-]
+];
