@@ -1,0 +1,27 @@
+{
+  "name": "cpnt262-a2-Gallery-Custom-Module",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^12.16.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atran0802/cpnt262-a2-Gallery-Custom-Module.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atran0802/cpnt262-a2-Gallery-Custom-Module/issues"
+  },
+  "homepage": "https://github.com/atran0802/cpnt262-a2-Gallery-Custom-Module#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
