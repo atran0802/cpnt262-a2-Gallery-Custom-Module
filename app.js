@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const ejs = require('ejs');
+const pageTitle = require('./pageTitle');
 const gallery = require('./gallery');
 
 /* Runs express */
@@ -11,7 +12,7 @@ app.set('view engine', 'ejs');
 
 /* Get endpoint handlers to render */
 app.get('/',function(req, res) {  
-  res.render('index');
+  res.render('index',pageTitle.index);
 });
 
 app.get('/gallery',function(req, res) {  
