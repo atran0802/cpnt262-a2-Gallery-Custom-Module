@@ -4,7 +4,7 @@
   "engines": {
     "node": "^12.16.1"
   },
-  "description": "",
+  "description": "https://wbdv-a2-gallery-custom-module.herokuapp.com/",
   "main": "index.js",
   "scripts": {
     "start": "node app.js"
@@ -22,6 +22,8 @@
   "homepage": "https://github.com/atran0802/cpnt262-a2-Gallery-Custom-Module#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "node": "^13.10.1"
+  },
+  "devDependencies": {}
 }
