@@ -11,7 +11,11 @@ app.set('view engine', 'ejs');
 
 /* Get endpoint handlers to render */
 app.get('/',function(req, res) {  
-  res.render('index',{gallery});
+  res.render('index');
+});
+
+app.get('/gallery',function(req, res) {  
+  res.render('gallery',{gallery});
 });
 
 /* Serving static files in express */
