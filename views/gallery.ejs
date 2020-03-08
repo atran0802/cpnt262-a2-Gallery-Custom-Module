@@ -8,10 +8,16 @@
 <%- include('partials/header') %>
 
 <main>
+  <%
+  gallery.forEach(function(photo){
+  %>
   <figure>
-    <img src="images/md/" alt=<%= title %>>
-    <figcaption><%= title %> photographer <%= attribution.credit %></figcaption>
+    <img src="images/sm/" alt=<%= title %>>
+    <figcaption><%= photo.title %> photographer <%= photo.attribution.credit %></figcaption>
   </figure>
+  <%
+  })
+  %>
 </main>
 
 <%- include('partials/footer') %>
