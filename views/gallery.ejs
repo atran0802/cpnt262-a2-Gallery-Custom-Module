@@ -9,14 +9,18 @@
 
 <main>
   <%
-  gallery.forEach(function(photo){
+  for (photo of gallery){
   %>
-  <figure>
-    <img src="images/sm/" alt=<%= title %>>
-    <figcaption><%= photo.title %> photographer <%= photo.attribution.credit %></figcaption>
-  </figure>
+  <div class="card">
+    <a href="./gallery/<%= photo.id %>">
+      <figure>
+        <img src="images/sm/<%= photo.fileName %>" alt="<%= photo.title %>">
+        <figcaption>"<%= photo.title %>" photographer - <%= photo.attribution.credit %></figcaption>
+      </figure>
+    </a>
+  </div>
   <%
-  })
+  }
   %>
 </main>
 
