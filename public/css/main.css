@@ -27,12 +27,12 @@
   color: #4084F9;
   }
 
+#nav-bar a:visited {
+  color:#fff;
+  }  
+
 .active {
   background-color: #479BC1;
-  }
-
-a:visited {
-  color:#fff;
   }
 
 ul {
@@ -56,7 +56,7 @@ li {
   margin-right: 40px;
   }  
 
-main {
+section {
   width: 100%;
   height: 100%;
 
@@ -67,9 +67,30 @@ main {
   text-align: center;
   }
 
+main {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  text-align: center;
+  }
+
 h1 {
   font-size: 50px;
   }  
+
+.card {
+  width: min-content;
+  margin: 1rem;
+
+  background-color: #C9CAE0;
+  border: 1px solid #424D63;
+  }
 
 footer {
   position: relative;
