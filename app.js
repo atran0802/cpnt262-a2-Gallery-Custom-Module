@@ -25,13 +25,11 @@ app.get('/gallery',function(req, res) {
   res.render('gallery',{gallery});
 });
 
-app.get('/gallery/:id',function(req, res, next) {
+app.get('/gallery/:id',function(req, res) {
   for (photo of gallery){
     if(photo.id == req.params.id){
       res.render('galleryId',{title:`${req.params.id}`})
-      return;
   }}
-  next();
 });
 
 /* Serving static files in express */
