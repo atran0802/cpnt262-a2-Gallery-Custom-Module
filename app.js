@@ -28,7 +28,7 @@ app.get('/gallery',function(req, res) {
 app.get('/gallery/:id',function(req, res) {
   for (photo of gallery){
     if(photo.id == req.params.id){
-      res.render('galleryId',{title:`${req.params.id}`})
+      res.render('galleryId',{title: req.params.id})
   }}
 });
 
