@@ -10,13 +10,28 @@ const app = express();
 /* Runs ejs */
 app.set('view engine', 'ejs');
 
+app.locals.gallery = gallery;
+
 /* Get endpoint handlers to render */
 app.get('/',function(req, res) {  
   res.render('index',pageTitle.index);
 });
 
 app.get('/gallery',function(req, res) {  
+  res.render('gallery',pageTitle.gallery);
+});
+
+app.get('/gallery',function(req, res) {  
   res.render('gallery',{gallery});
+});
+
+app.get('/gallery/:id',function(req, res, next) {
+  for (photo of gallery){
+    if(photo.id == req.params.id){
+      res.render('galleryId',{title:`${req.params.id}`})
+      return;
+  }}
+  next();
 });
 
 /* Serving static files in express */
